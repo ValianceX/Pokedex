@@ -78,7 +78,7 @@ extension PokemonGridViewController: UISearchBarDelegate {
         
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let predicateString = searchBar.text!
-        displayingPokemon = pokemonArray.filter( {$0.name.contains(predicateString)} )
+        displayingPokemon = filteredPokemon.filter( {$0.name.contains(predicateString)} )
         displayingPokemon.sort {$0.id < $1.id}
         
         if (predicateString == ""){
