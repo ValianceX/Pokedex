@@ -43,7 +43,7 @@ extension PokemonGridViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedPokemon = filteredPokemon[indexPath.row]
+        selectedPokemon = displayingPokemon[indexPath.row]
         performSegue(withIdentifier: "toDetailSegue", sender: Any?.self)
     }
     
