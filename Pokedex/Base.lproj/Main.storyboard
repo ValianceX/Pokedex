@@ -657,6 +657,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="9ok-rX-2At"/>
         <segue reference="PB9-a8-dph"/>
     </inferredMetricsTieBreakers>
     <resources>
